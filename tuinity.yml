@@ -1,0 +1,26 @@
+# Configuration file for Tuinity.
+delay-chunkunloads-by: 2
+lag-compensate-block-breaking: true
+use-new-light-engine: true
+config-version-please-do-not-modify-me: 2
+world-settings:
+  default:
+    spawn-limits:
+      water-ambient: -1
+      monsters: -1
+      animals: -1
+      water-animals: -1
+      ambient: -1
+  world: {}
+  world_nether: {}
+  world_the_end: {}
+packet-limiter:
+  kick-message: '&cSent too many packets'
+  limits:
+    all:
+      interval: 7.0
+      max-packet-rate: 500.0
+    PacketPlayInAutoRecipe:
+      interval: 4.0
+      max-packet-rate: 5.0
+      action: DROP
